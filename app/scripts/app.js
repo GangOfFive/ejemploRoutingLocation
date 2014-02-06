@@ -22,6 +22,10 @@ angular.module('ngRouteApp', [
                 templateUrl: 'views/leo.html',
                 controller: 'LeoCrtl'
             })
+            .when('/redirect',  {
+                templateUrl: 'views/redirect.html',
+                controller: 'RedirectCrtl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
